@@ -12,7 +12,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="make_change.css">
+  <link rel="stylesheet" href="calculate_tax.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
   .fakeimg {
@@ -79,33 +79,41 @@
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
-      <h2 class="mt-5">Change Calculator</h2>
+      <!-- <h2 class="mt-5">Change Calculator</h2> -->
       <h5></h5>
       <body>
-        <main>
     
-            <label>Enter amount of change due (0-99):</label>
-            <div>
-                <input type="text" id="cents" />
-                <input type="button" value="Calculate" name="calculate" id="calculate" />
-            </div>
-            <div>
-                <label>Quarters:</label>
-                <input type="text" id="quarters" disabled>
-            </div>
-            <div>
-                <label>Dimes:</label>
-                <input type="text" id="dimes" disabled>
-            </div>
-            <div>
-                <label>Nickels:</label>
-                <input type="text" id="nickels" disabled>
-            </div>
-            <div>
-                <label>Pennies:</label>
-                <input type="text" id="pennies" disabled>
-            </div>
-        </main>
+        <h1>Murach's Javascirpt and DOM Scripting</h1>
+        <div class = "book_description">
+            <h3>Book description</h3>
+            <p>This book gives a complete outline of the Western Wisdom 
+            Teaching as far as it may be made public at the presnet time.
+            It contains a comprehnsive outline of the evolutionary processes 
+            of man and the universe, correlating science with religion. Mx Heindel, 
+            the autor, recieved this Teaching personally
+            from the Rosicurcian Brotherhood. It is their latest communication.</p>
+            <p><a id="descriptionlink" href='#' onClick="showMoreDescription()" data-text="show more">Show More</a></p>
+            <div id="descrpition" style ='display:none'>
+            <p>Part I a treatose on the Visible and the Invisible Worlds, Man
+                Initiation, Esoteric Training and a Safe Method ofAcquiring Firsthand Knowledge.
+            </p>
+        </div>
+        </div>
+        
+
+        <div class ="author">
+            <h3> About the Author</h3>
+            <p> He was born in Aarphus, Denmark, into the noble family von
+                who would later adopt the pen name of Max Heindel.
+            </p>
+            <p><a id="authorlink" href='#' onClick="showMoreAboutAuthor()">Show More</a></p>
+            <div id="author" style="display:none">
+            <p>When he was six years old, his father died, leaving his monther
+                place in society as members of the noble classes.
+            </p>
+        </div>
+        </div>
+
 
     </body>
       <p>Text</p>
@@ -118,7 +126,7 @@
   <p>Footer</p>
 
 </div>
-<script src="make_change.js"></script>
+<script src="subset_expansion.js"></script>
 
 </body>
 </html>
