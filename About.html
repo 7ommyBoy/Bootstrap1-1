@@ -3,9 +3,9 @@
 <head>
   <title>Bootstrap 5 Website Example</title>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+  <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>  
+  crossorigin="anonymous"></script>   -->
 
 
 
@@ -23,25 +23,24 @@
 </head>
 <body>
 
-<div class="p-5 bg-primary text-white text-center">
-  <h1>My Second Bootstrap 5 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+<div class="p-3 bg-dark text-white text-center">
+  <h1>Tommy Works</h1>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="index.html">Active</a>
+        <a class="nav-link active" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="About.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="image_Gallery.html">Image Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link disabled" href="#"></a>
       </li>
     </ul>
   </div>
@@ -52,22 +51,22 @@
     <div class="col-sm-4">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
+      <div class="fakeimg" >Fake Image</div>
       <p>Hello! My name is Tommy Works i am attending Cerritos College. This semester i am currently taking Physics 2 and JavaScript. In my JavaScript coruse we are currently using this bootstrap to build for are next project. </p>
-      <h3 class="mt-4">Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
+      <h3 class="mt-4">Links</h3>
+
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link text-dark" href="https://github.com/7ommyboy">GitHub</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.linkedin.com/in/tommy-works-145248155">Linkedin</a>
+        </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link disabled" href="#"></a>
         </li>
       </ul>
       <hr class="d-sm-none">
@@ -83,7 +82,7 @@
       <h5></h5>
       <body>
     
-        <h1>Murach's Javascirpt and DOM Scripting</h1>
+        <h2>Murach's Javascirpt and DOM Scripting</h2>
         <div class = "book_description">
             <h3>Book description</h3>
             <p>This book gives a complete outline of the Western Wisdom 
@@ -92,7 +91,7 @@
             of man and the universe, correlating science with religion. Mx Heindel, 
             the autor, recieved this Teaching personally
             from the Rosicurcian Brotherhood. It is their latest communication.</p>
-            <p><a id="descriptionlink" href='#' onClick="showMoreDescription()" data-text="show more">Show More</a></p>
+            <p><a id="descriptionlink"  href='#'  onClick="showMoreDescription()" data-text="show more">Show More</a></p>
             <div id="descrpition" style ='display:none'>
             <p>Part I a treatose on the Visible and the Invisible Worlds, Man
                 Initiation, Esoteric Training and a Safe Method ofAcquiring Firsthand Knowledge.
@@ -126,6 +125,10 @@
   <p>Footer</p>
 
 </div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script>  
+
 <script src="subset_expansion.js"></script>
 
 </body>
