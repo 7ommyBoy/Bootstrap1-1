@@ -8,7 +8,7 @@ body {
 	width: 650px;
 	margin: 0 auto;
 	padding: 15px 25px;	
-	border: 3px solid blue;
+	border: 3px solid rgb(205, 205, 233);
 }
 h1 { 
 	font-size: 150%;
@@ -31,5 +31,5 @@ p, a {
 	padding-left: 25px;
 }
 a, a:focus, a:hover {
-	color: blue;
+	color: rgb(0, 0, 0);
 }
