@@ -3,10 +3,10 @@ body {
     background-color: rgb(204, 207, 224);
     margin: auto;
     width: 1000px;
-    border: 3px solid rgb(201, 201, 219);
+    border: 3px solid blue;
 }
 h1 {
-	color: rgb(249, 248, 248);
+	color: rgb(255, 255, 255);
 	margin-top: 0;
 }
 main {
@@ -26,3 +26,23 @@ input {
 #calculate {
 	margin-bottom: 1em;
 }
+
+.img-me {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    width: 110px;
+    object-fit: fakeimg; 
+
+}
+.img-punk {
+
+    width: 400px;
+
+  
+
+}
+.fakeimg {
+    height: 200px;
+    background: rgb(204, 207, 224);
+  }
