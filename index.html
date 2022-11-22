@@ -3,7 +3,6 @@
 <head>
   <title>Bootstrap 5 Website Example</title>
 
-  
   <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>   -->
@@ -15,7 +14,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="calculate_tax.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
 </head>
 <body>
 
@@ -30,7 +34,7 @@
         <a class="nav-link active" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="About.html">About</a>
+        <a class="nav-link" href="About.html">Education</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="image_Gallery.html">Image Gallery</a>
@@ -47,21 +51,19 @@
     <div class="col-sm-4">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
-      <div class="fakeimg">  
-      <img class="img-me" src="me.jpg" alt=""></div>
-    
+      <div class="fakeimg" >Fake Image</div>
       <p>Hello! My name is Tommy Works i am attending Cerritos College. This semester i am currently taking Physics 2 and JavaScript. In my JavaScript coruse we are currently using this bootstrap to build for are next project. </p>
-      <h3 class="mt-4 ">Links</h3>
+      <h3 class="mt-4">Links</h3>
 
-      <ul class="nav nav-pills flex-column ">
+      <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link text-primary" href="https://github.com/7ommyboy">GitHub</a>
+          <a class="nav-link text-dark" href="https://github.com/7ommyboy">GitHub</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="https://www.linkedin.com/in/tommy-works-145248155">Linkedin</a>
+          <a class="nav-link text-dark" href="https://www.linkedin.com/in/tommy-works-145248155">Linkedin</a>
         </li>
         <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Contact Info</a>
+          <a class="nav-link" href="#">Link</a>
         </li> -->
         <li class="nav-item">
           <a class="nav-link disabled" href="#"></a>
@@ -70,62 +72,65 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>Project 1</h2>
-      <img class="img-punk" src="punkrockfightclub.jpg" alt="">
-      <h5>PRFC Project, Nov 2, 2022</h5>
-        <div class="fakeimg"> 
-          <p>Creating my first website using HTML and CSS. 
-          The link for the website is down below or you can also click my GitHub for other projects. During the project we had to consist of having muliply pages.
-        Also images, contact information and also working links to direct you. </p> 
-        <a class="nav-link text-primary" href="https://7ommyboy.github.io/PunkRockFightClub/">Punk Rock Fight Club [Link]</a>
-        </li>   </div>
-      <h2 class="mt-2">Project 2</h2>
-      <h3>Change Calculator Project! (Try!)</h3>
+      <!-- <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2020</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+
+      <!-- <h2 class="mt-5">Change Calculator</h2> -->
+      <h5></h5>
       <body>
-        <main>
     
-            <label>Enter amount of change due (0-99):</label>
-            <div>
-                <input type="text" id="cents" />
-                <input type="button" value="Calculate" name="calculate" id="calculate" />
-            </div>
-            <div>
-                <label>Quarters:</label>
-                <input type="text" id="quarters" disabled>
-            </div>
-            <div>
-                <label>Dimes:</label>
-                <input type="text" id="dimes" disabled>
-            </div>
-            <div>
-                <label>Nickels:</label>
-                <input type="text" id="nickels" disabled>
-            </div>
-            <div>
-                <label>Pennies:</label>
-                <input type="text" id="pennies" disabled>
-            </div>
-        </main>
+        <h2>Murach's Javascirpt and DOM Scripting</h2>
+        <div class = "book_description">
+            <h3>Book description</h3>
+            <p>This book gives a complete outline of the Western Wisdom 
+            Teaching as far as it may be made public at the presnet time.
+            It contains a comprehnsive outline of the evolutionary processes 
+            of man and the universe, correlating science with religion. Mx Heindel, 
+            the autor, recieved this Teaching personally
+            from the Rosicurcian Brotherhood. It is their latest communication.</p>
+            <p><a id="descriptionlink"  href='#'  onClick="showMoreDescription()" data-text="show more">Show More</a></p>
+            <div id="descrpition" style ='display:none'>
+            <p>Part I a treatose on the Visible and the Invisible Worlds, Man
+                Initiation, Esoteric Training and a Safe Method ofAcquiring Firsthand Knowledge.
+            </p>
+        </div>
+        </div>
+        
+
+        <div class ="author">
+            <h3> About the Author</h3>
+            <p> He was born in Aarphus, Denmark, into the noble family von
+                who would later adopt the pen name of Max Heindel.
+            </p>
+            <p><a id="authorlink" href='#' onClick="showMoreAboutAuthor()">Show More</a></p>
+            <div id="author" style="display:none">
+            <p>When he was six years old, his father died, leaving his monther
+                place in society as members of the noble classes.
+            </p>
+        </div>
+        </div>
+
 
     </body>
-
+      <p>Text</p>
+      <p> More text, more text, more text</p>
     </div>
   </div>
 </div>
 
-<div class="mt-5 p-5 bg-dark text-white text-center">
-  <p>Tommy Works Resume</p>
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Footer</p>
 
 </div>
-
-<!-- jQuery Libary  -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
 integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
 crossorigin="anonymous"></script>  
 
-
-
-<script src="calculate_tax.js"></script>
+<script src="subset_expansion.js"></script>
 
 </body>
 </html>
