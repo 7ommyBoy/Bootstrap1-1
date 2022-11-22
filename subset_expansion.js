@@ -6,11 +6,11 @@ $(document).ready(function() {
     
     //$(this).prev() represent element before current element which is div
     
-    //On clicking a, use toggleClass method to toggle <div class="hide">
+    //While clicking a, use toggleClass method to toggle <div class="hide">
     
     $(this).prev().toggleClass("hide");
     
-    //Check if div has class "hide". If yes, change text of $(this) means <a> here, to show more. If not, then change text to show less
+    //Double check if div has the class "hide". If we do, change text of $(this) means <a> here, to show more. If not, then change text to show less
     
     if($(this).prev().hasClass("hide")){
     
