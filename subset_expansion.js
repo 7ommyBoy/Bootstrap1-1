@@ -1,30 +1,27 @@
-let descriptionCount = 0
-let  authorCount = 0
+$(document).ready(function() {
 
-function showMoreDescription(){
-  descriptionCount+=1
-  if(descriptionCount%2 !=0){ 
-    document.getElementById("description").style.display="block";
-    document.getElementById("descriptionlink").text="Show less";
-  }
-  else
-  {
-    document.getElementById("description").style.display="none"
-    document.getElementById("descriptionlink").text="Show more"
-  }
-}
-
-function showMoreAboutAuthor(){
-  authorCount +=1
-  if(authorCount%2 !=0)
-  {
-      document.getElementById("author").style.display="block"
-      document.getElementById("authorlink").text="Show less";
-  }
-  else
-  {
-      document.getElementById("author").style.display="none"
-      document.getElementById("authorlink").text="Show more";
-  }
-  
-}
+    $("a").click(function() {
+    
+    //$(this) represents current element, which is <a> right now
+    
+    //$(this).prev() represent element before current element which is div
+    
+    //On clicking a, use toggleClass method to toggle <div class="hide">
+    
+    $(this).prev().toggleClass("hide");
+    
+    //Check if div has class "hide". If yes, change text of $(this) means <a> here, to show more. If not, then change text to show less
+    
+    if($(this).prev().hasClass("hide")){
+    
+    $(this).text("Show more");
+    
+    }else{
+    
+    $(this).text("Show less");
+    
+    }
+    
+    });
+    
+    });
