@@ -33,9 +33,11 @@ li {
 p, a {
 	padding-bottom: .4em;
 	padding-left: 25px;
+	
 }
 a, a:focus, a:hover {
-	color: rgb(0, 0, 0);
+	color: blue;
+
 }
 
 main {
