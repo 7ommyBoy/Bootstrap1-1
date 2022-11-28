@@ -1,9 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 420px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 3px solid rgb(149, 255, 0);
+    background-color: rgb(204, 207, 224);
+    margin: auto;
+    width: 1000px;
+    border: 3px solid blue;
 }
 h1, h2, ul, p {
 	margin: 0;
@@ -11,7 +11,11 @@ h1, h2, ul, p {
 }
 h1 {
 	padding-bottom: .25em;
-	color: rgb(249, 249, 249);
+	color: white;
+}
+h3 {
+    padding-bottom: .25em;
+    color: black;
 }
 h2 {
 	font-size: 120%;
@@ -35,3 +39,19 @@ li {
 
 }
 
+
+.img-me {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    width: 110px;
+    object-fit: fakeimg; 
+
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+
+legend {text-align:center}
