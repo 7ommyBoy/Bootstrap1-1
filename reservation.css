@@ -9,7 +9,9 @@ body {
 h1 {
     color: rgb(255, 255, 255);
 }
-
+h2 {
+    color: rgb(0, 0, 0);
+}
 main {
     padding: 1em 2em;
 }
